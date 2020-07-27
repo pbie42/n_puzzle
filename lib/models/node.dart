@@ -21,6 +21,10 @@ class BoardNode {
   }
 
   bool get isSolution {
-    return _boardManager.isWinning();
+    return _boardManager.isWinning;
+  }
+
+  Tile getBlankTile() {
+    return _boardManager.getBlankTile();
   }
 }

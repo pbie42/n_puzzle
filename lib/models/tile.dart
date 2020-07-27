@@ -14,18 +14,10 @@ class Tile {
     Alignment position,
     int value,
     int goalValue,
-    Tile upTile,
-    Tile downTile,
-    Tile leftTile,
-    Tile rightTile,
   }) {
     _position = position;
     _value = value;
     _goalValue = goalValue;
-    _upTile = upTile;
-    _downTile = downTile;
-    _leftTile = leftTile;
-    _rightTile = rightTile;
   }
 
   Alignment get position => _position;
@@ -35,4 +27,20 @@ class Tile {
   Tile get downTile => _downTile;
   Tile get leftTile => _leftTile;
   Tile get rightTile => _rightTile;
+
+  void setUpTile(Tile newTile) {
+    _upTile = newTile;
+  }
+
+  void setDownTile(Tile newTile) {
+    _downTile = newTile;
+  }
+
+  void setLeftTile(Tile newTile) {
+    _leftTile = newTile;
+  }
+
+  void setRightTile(Tile newTile) {
+    _rightTile = newTile;
+  }
 }
